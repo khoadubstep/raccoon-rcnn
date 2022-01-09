@@ -5,8 +5,8 @@ ORIG_IMAGES = os.path.sep.join([ORIG_PATH, "images"])
 ORIG_ANNOTS = os.path.sep.join([ORIG_PATH, "annotations"])
 
 GEN_PATH = os.path.sep.join(["datasets", "generated"])
-GEN_POSITIVE = os.path.sep.join([GEN_PATH, "raccoon"])
-GEN_NEGATIVE = os.path.sep.join([GEN_PATH, "no_raccoon"])
+POSITIVE_PATH = os.path.sep.join([GEN_PATH, "raccoon"])
+NEGATIVE_PATH = os.path.sep.join([GEN_PATH, "no_raccoon"])
 
 MAX_PROPOSALS = 2000
 MAX_PROPOSALS_INFER = 200
