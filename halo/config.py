@@ -1,10 +1,10 @@
 import os
 
-ORIG_PATH = os.path.sep.join(["datasets", "original"])
+ORIG_PATH = os.path.sep.join(["raccoons", "original"])
 ORIG_IMAGES = os.path.sep.join([ORIG_PATH, "images"])
 ORIG_ANNOTS = os.path.sep.join([ORIG_PATH, "annotations"])
 
-GEN_PATH = os.path.sep.join(["datasets", "generated"])
+GEN_PATH = os.path.sep.join(["raccoons", "generated"])
 POSITIVE_PATH = os.path.sep.join([GEN_PATH, "raccoon"])
 NEGATIVE_PATH = os.path.sep.join([GEN_PATH, "no_raccoon"])
 
