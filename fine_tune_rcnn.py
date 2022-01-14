@@ -100,6 +100,9 @@ predIdxs = np.argmax(predIdxs, axis=1)
 print(classification_report(testY.argmax(axis=1), predIdxs,
                             target_names=lb.classes_))
 
+print("[INFO] saving mask detector model...")
+model.save(cfg.MODEL_PATH, save_format="h5")
+
 print("[INFO] saving label encoder...")
 f = open(cfg.ENCODER_PATH, "wb")
 f.write(pickle.dumps(lb))
